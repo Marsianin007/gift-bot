@@ -45,7 +45,7 @@ def main() -> None:
         if not msg or str(msg.get("from", {}).get("id")) != str(owner_id):
             continue
         text = msg.get("text")
-        if text:
+        if text and not text.startswith("/"):  # skip bot commands like /start
             new_messages.append(text)
 
     if new_messages:
