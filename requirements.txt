@@ -1,0 +1,9 @@
+aiogram>=3.4
+fastapi
+uvicorn[standard]
+jinja2
+sqlalchemy>=2
+python-dotenv
+requests
+pytest
+httpx
